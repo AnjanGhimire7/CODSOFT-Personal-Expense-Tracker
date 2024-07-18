@@ -73,7 +73,10 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.backgroundColor,
-      appBar: AppBar(title: const Text('Expense Tracker')),
+      appBar: AppBar(
+        title: const Text('Expense Tracker'),
+        shadowColor: AppColors.backgroundColor,
+      ),
       body: _items.isNotEmpty
           ? SingleChildScrollView(
               child: Column(

@@ -19,13 +19,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Hive Demo',
-      theme: ThemeData(
-        primarySwatch: AppColors.primaryColor,
-      ),
-      home: const DashBoardScreen(),
+      home: DashBoardScreen(),
     );
   }
 }
